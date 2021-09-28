@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: stretch;
+}
+
+.element-1 {
+  align-self: flex-start;
+}
+
+.element-2 {
+  align-self: center;
+}
+
+.element-3 {
+  align-self: flex-end;
+}
+
+.element-4 {
+  justify-self: flex-start;
+}
+
+.element-5 {
+  justify-self: center;
+}
+
+.element-6 {
+  justify-self: flex-end;
+}
+
+.grid > div {
+  background: #ecf0f1;
+  padding: 1em;
+}
+
+.grid > div:hover {
+  border: 1px solid #f1c40f;
+}
